@@ -1,0 +1,9 @@
+GetFileValueByKeyAndTypeSharing violation on path /home/files/ConfigFileValue/out2InIpListIsEnable.txt  at System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean anonymous, FileOptions options) [0x00000] in <filename unknown>:0 
+  at System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share) [0x00000] in <filename unknown>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.StreamWriter..ctor (System.String path, Boolean append, System.Text.Encoding encoding, Int32 bufferSize) [0x00000] in <filename unknown>:0 
+  at System.IO.StreamWriter..ctor (System.String path, Boolean append, System.Text.Encoding encoding) [0x00000] in <filename unknown>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter:.ctor (string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00000] in <filename unknown>:0 
+  at System.IO.File.WriteAllText (System.String path, System.String contents) [0x00000] in <filename unknown>:0 
+  at UitilityFrameX.Config.KeyValueDal.GetFileValueByKeyAndType (System.String keyName, System.String keyType) [0x00000] in <filename unknown>:0 

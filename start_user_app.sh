@@ -2,7 +2,7 @@
 
 ifconfig wlan0 192.168.1.45
 #/home/pi/video_udp &
-python /home/pi/UDPServer.py -d &
+python /home/pi/boot/UDPServer.py -d &
 python /home/pi/putty_upload/8266_Stat_UpLoad.py -d &
 python /home/pi/code/boot/FindPiServer.py -d &
 #/home/pi/putty_upload/tcp_server_1 >/home/pi/logs/esp8266.txt 2>&1 &
